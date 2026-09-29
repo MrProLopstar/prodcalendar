@@ -122,6 +122,14 @@ for (let year = FIRST_YEAR; year <= LAST_YEAR; year += 1) {
     throw error;
   }
   const [a, b] = sources;
+  if (a[0] !== 'off' || b[0] !== 'off') {
+    if (year > PUBLISHED_YEAR) {
+      process.stdout.write(`${year}: placeholder data (January 1 is not a holiday), not published yet
+`);
+      break;
+    }
+    throw new Error(`${year}: January 1 is not a holiday in one of the sources`);
+  }
   let encoded = '';
   for (let index = 0; index < daysInYear(year); index += 1) {
     const date = dateOf(year, index);

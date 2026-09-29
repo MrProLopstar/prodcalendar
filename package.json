@@ -1,6 +1,6 @@
 {
   "name": "prodcal",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Russian production calendar for TypeScript: workdays, holidays, transfers and working-hour norms, offline",
   "keywords": [
     "production-calendar",

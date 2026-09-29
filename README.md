@@ -20,7 +20,7 @@ stats(2025).hours;                            // 1972, the official norm for a 4
 ```
 
 - Works offline: the calendar is bundled, about 5 KB, no API calls at runtime
-- Covers 2013–2026, new years arrive automatically once the Government Decree is published
+- Covers 2013–2026. A weekly GitHub Actions job checks the sources and opens a pull request once the next year is published; it is released after a manual check against the Government Decree
 - Two independent sources, isdayoff.ru and xmlcalendar.ru, compared day by day; yearly norms are tested against the official figures
 - Distinguishes regular days off from the paid non-working days of 2020 and 2021 introduced by presidential decrees
 - No dependencies, strict TypeScript, runs in Node, Deno, Bun and browsers
@@ -82,7 +82,7 @@ stats(2026, 1);                       // January 2026
 
 ## Data
 
-`npm run data` downloads every year from isdayoff.ru and xmlcalendar.ru and fails if the two disagree on any day. Resolved disagreements live in `data/overrides.json` and presidential non-working days in `data/nonworking.json`, each with the legal basis. A weekly GitHub Actions job opens a pull request when a new year is published.
+`npm run data` downloads every year from isdayoff.ru and xmlcalendar.ru and fails if the two disagree on any day. Resolved disagreements live in `data/overrides.json` and presidential non-working days in `data/nonworking.json`, each with the legal basis. A weekly GitHub Actions job opens a pull request when a new year is published. A year is accepted only when both sources agree and mark January 1 as a holiday, which filters out placeholder data some sources return before the decree.
 
 ## Releasing
 

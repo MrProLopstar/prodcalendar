@@ -33,6 +33,7 @@ const OFFICIAL: ReadonlyArray<readonly [number, number, number]> = [
   [2023, 247, 1973],
   [2024, 248, 1979],
   [2025, 247, 1972],
+  [2026, 247, 1972],
 ];
 
 describe('official yearly norms', () => {
