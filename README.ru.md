@@ -2,6 +2,7 @@
 
 [English](README.md) · **Русский**
 
+[![npm](https://img.shields.io/npm/v/prodcal)](https://www.npmjs.com/package/prodcal)
 [![JSR](https://jsr.io/badges/@mrprolopstar/prodcal)](https://jsr.io/@mrprolopstar/prodcal)
 [![JSR Score](https://jsr.io/badges/@mrprolopstar/prodcal/score)](https://jsr.io/@mrprolopstar/prodcal/score)
 [![CI](https://github.com/MrProLopstar/prodcal/actions/workflows/ci.yml/badge.svg)](https://github.com/MrProLopstar/prodcal/actions/workflows/ci.yml)
@@ -10,7 +11,7 @@
 Производственный календарь РФ для TypeScript и JavaScript: рабочие дни, праздники, переносы выходных, сокращённые предпраздничные дни и нормы рабочего времени.
 
 ```ts
-import { addWorkdays, dayKind, isWorkday, stats, workdaysBetween } from '@mrprolopstar/prodcal';
+import { addWorkdays, dayKind, isWorkday, stats, workdaysBetween } from 'prodcal';
 
 isWorkday('2026-01-09');                      // false, перенесённый выходной
 dayKind('2026-11-03');                        // 'short'
@@ -28,11 +29,13 @@ stats(2025).hours;                            // 1972, официальная н
 ## Установка
 
 ```bash
-npx jsr add @mrprolopstar/prodcal
+npm install prodcal
 ```
 
+Тот же пакет опубликован в [JSR](https://jsr.io/@mrprolopstar/prodcal):
+
 ```bash
-npm install github:MrProLopstar/prodcal
+npx jsr add @mrprolopstar/prodcal
 ```
 
 ## API
@@ -86,7 +89,7 @@ stats(2026, 1);                                   // январь 2026
 
 ## Релизы
 
-**Actions → Release → Run workflow**, затем выбрать `patch`, `minor`, `major` или точную версию. Workflow поднимет версию в `package.json` и `jsr.json`, сделает коммит и тег, прогонит тесты и опубликует пакет в JSR и GitHub Packages вместе с GitHub Release. Вариант `current` выпускает версию, которая уже указана в `package.json`. Push тега `v*` вручную тоже работает.
+**Actions → Release → Run workflow**, затем выбрать `patch`, `minor`, `major` или точную версию. Workflow поднимет версию в `package.json` и `jsr.json`, сделает коммит и тег, прогонит тесты и опубликует пакет в npm, JSR и GitHub Packages вместе с GitHub Release. Вариант `current` выпускает версию, которая уже указана в `package.json`. Push тега `v*` вручную тоже работает.
 
 ## Лицензия
 

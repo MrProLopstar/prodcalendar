@@ -2,6 +2,7 @@
 
 **English** · [Русский](README.ru.md)
 
+[![npm](https://img.shields.io/npm/v/prodcal)](https://www.npmjs.com/package/prodcal)
 [![JSR](https://jsr.io/badges/@mrprolopstar/prodcal)](https://jsr.io/@mrprolopstar/prodcal)
 [![JSR Score](https://jsr.io/badges/@mrprolopstar/prodcal/score)](https://jsr.io/@mrprolopstar/prodcal/score)
 [![CI](https://github.com/MrProLopstar/prodcal/actions/workflows/ci.yml/badge.svg)](https://github.com/MrProLopstar/prodcal/actions/workflows/ci.yml)
@@ -10,7 +11,7 @@
 Russian production calendar (производственный календарь РФ) for TypeScript and JavaScript: working days, public holidays, transferred days off, shortened pre-holiday days and working-hour norms.
 
 ```ts
-import { addWorkdays, dayKind, isWorkday, stats, workdaysBetween } from '@mrprolopstar/prodcal';
+import { addWorkdays, dayKind, isWorkday, stats, workdaysBetween } from 'prodcal';
 
 isWorkday('2026-01-09');                      // false, a transferred day off
 dayKind('2026-11-03');                        // 'short'
@@ -28,11 +29,13 @@ stats(2025).hours;                            // 1972, the official norm for a 4
 ## Install
 
 ```bash
-npx jsr add @mrprolopstar/prodcal
+npm install prodcal
 ```
 
+The same package is published to [JSR](https://jsr.io/@mrprolopstar/prodcal):
+
 ```bash
-npm install github:MrProLopstar/prodcal
+npx jsr add @mrprolopstar/prodcal
 ```
 
 ## API
@@ -86,7 +89,7 @@ stats(2026, 1);                       // January 2026
 
 ## Releasing
 
-Run **Actions → Release → Run workflow** and pick `patch`, `minor`, `major` or an exact version. The workflow bumps `package.json` and `jsr.json`, commits, tags, runs the tests and publishes to JSR and GitHub Packages with a GitHub release. Use `current` to release the version already in `package.json`. Pushing a `v*` tag by hand works too.
+Run **Actions → Release → Run workflow** and pick `patch`, `minor`, `major` or an exact version. The workflow bumps `package.json` and `jsr.json`, commits, tags, runs the tests and publishes to npm, JSR and GitHub Packages with a GitHub release. Use `current` to release the version already in `package.json`. Pushing a `v*` tag by hand works too.
 
 ## License
 
