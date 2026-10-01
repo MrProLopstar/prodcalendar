@@ -1,11 +1,11 @@
-# prodcal
+# prodcalendar
 
 [English](README.md) · **Русский**
 
 [![npm](https://img.shields.io/npm/v/prodcalendar)](https://www.npmjs.com/package/prodcalendar)
-[![JSR](https://jsr.io/badges/@mrprolopstar/prodcal)](https://jsr.io/@mrprolopstar/prodcal)
-[![JSR Score](https://jsr.io/badges/@mrprolopstar/prodcal/score)](https://jsr.io/@mrprolopstar/prodcal/score)
-[![CI](https://github.com/MrProLopstar/prodcal/actions/workflows/ci.yml/badge.svg)](https://github.com/MrProLopstar/prodcal/actions/workflows/ci.yml)
+[![JSR](https://jsr.io/badges/@mrprolopstar/prodcalendar)](https://jsr.io/@mrprolopstar/prodcalendar)
+[![JSR Score](https://jsr.io/badges/@mrprolopstar/prodcalendar/score)](https://jsr.io/@mrprolopstar/prodcalendar/score)
+[![CI](https://github.com/MrProLopstar/prodcalendar/actions/workflows/ci.yml/badge.svg)](https://github.com/MrProLopstar/prodcalendar/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 Производственный календарь РФ для TypeScript и JavaScript: рабочие дни, праздники, переносы выходных, сокращённые предпраздничные дни и нормы рабочего времени.
@@ -32,10 +32,10 @@ stats(2025).hours;                            // 1972, официальная н
 npm install prodcalendar
 ```
 
-Тот же пакет опубликован в [JSR](https://jsr.io/@mrprolopstar/prodcal):
+Тот же пакет опубликован в [JSR](https://jsr.io/@mrprolopstar/prodcalendar):
 
 ```bash
-npx jsr add @mrprolopstar/prodcal
+npx jsr add @mrprolopstar/prodcalendar
 ```
 
 ## API

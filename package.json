@@ -1,6 +1,6 @@
 {
   "name": "prodcalendar",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Russian production calendar for TypeScript: workdays, holidays, transfers and working-hour norms, offline",
   "keywords": [
     "production-calendar",
@@ -37,11 +37,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MrProLopstar/prodcal.git"
+    "url": "git+https://github.com/MrProLopstar/prodcalendar.git"
   },
-  "homepage": "https://github.com/MrProLopstar/prodcal#readme",
+  "homepage": "https://github.com/MrProLopstar/prodcalendar#readme",
   "bugs": {
-    "url": "https://github.com/MrProLopstar/prodcal/issues"
+    "url": "https://github.com/MrProLopstar/prodcalendar/issues"
   },
   "scripts": {
     "build": "tsc -p tsconfig.build.json",

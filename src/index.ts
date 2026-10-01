@@ -1,12 +1,12 @@
 /**
- * # prodcal
+ * # prodcalendar
  *
  * The Russian production calendar for TypeScript and JavaScript: working days, public holidays,
  * transferred days off, shortened pre-holiday days and working-hour norms. Works offline, has no
  * dependencies, and runs in Node, Deno, Bun and browsers.
  *
  * ```ts
- * import { addWorkdays, dayKind, isWorkday, stats, workdaysBetween } from '@mrprolopstar/prodcal';
+ * import { addWorkdays, dayKind, isWorkday, stats, workdaysBetween } from '@mrprolopstar/prodcalendar';
  *
  * isWorkday('2026-01-09');                   // false, a transferred day off
  * dayKind('2026-11-03');                     // 'short'
@@ -17,7 +17,7 @@
  *
  * Data from isdayoff.ru and xmlcalendar.ru, compared day by day. Dates outside the bundled years throw `ProdcalError`.
  *
- * Документация на русском: https://github.com/MrProLopstar/prodcal/blob/main/README.ru.md
+ * Документация на русском: https://github.com/MrProLopstar/prodcalendar/blob/main/README.ru.md
  *
  * @module
  */

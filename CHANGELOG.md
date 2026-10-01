@@ -2,6 +2,10 @@
 
 All notable changes to this project are documented here. The project follows [Semantic Versioning](https://semver.org).
 
+## 0.1.2
+
+- Renamed to prodcalendar everywhere: npm `prodcalendar`, JSR and GitHub Packages `@mrprolopstar/prodcalendar`, repository MrProLopstar/prodcalendar. npm rejects `prodcal` as too similar to an existing package. The old JSR package `@mrprolopstar/prodcal` stays at 0.1.1
+
 ## 0.1.1
 
 - Data script rejects placeholder years where January 1 is not a holiday (isdayoff.ru returns such data for unpublished years)

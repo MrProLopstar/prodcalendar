@@ -45,8 +45,8 @@ jobs:
           NODE_AUTH_TOKEN: ${{ github.token }}
         run: |
           npm run build
-          npm pkg set name=@mrprolopstar/prodcal
-          if npm view "@mrprolopstar/prodcal@${TAG#v}" version > /dev/null 2>&1; then
+          npm pkg set name=@mrprolopstar/prodcalendar
+          if npm view "@mrprolopstar/prodcalendar@${TAG#v}" version > /dev/null 2>&1; then
             echo "Already on GitHub Packages"
           else
             npm publish --ignore-scripts

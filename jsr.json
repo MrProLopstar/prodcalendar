@@ -1,6 +1,6 @@
 {
-  "name": "@mrprolopstar/prodcal",
-  "version": "0.1.1",
+  "name": "@mrprolopstar/prodcalendar",
+  "version": "0.1.2",
   "license": "MIT",
   "exports": "./src/index.ts",
   "publish": {
