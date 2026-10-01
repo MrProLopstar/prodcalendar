@@ -2,7 +2,7 @@
 
 **English** · [Русский](README.ru.md)
 
-[![npm](https://img.shields.io/npm/v/prodcal)](https://www.npmjs.com/package/prodcal)
+[![npm](https://img.shields.io/npm/v/prodcalendar)](https://www.npmjs.com/package/prodcalendar)
 [![JSR](https://jsr.io/badges/@mrprolopstar/prodcal)](https://jsr.io/@mrprolopstar/prodcal)
 [![JSR Score](https://jsr.io/badges/@mrprolopstar/prodcal/score)](https://jsr.io/@mrprolopstar/prodcal/score)
 [![CI](https://github.com/MrProLopstar/prodcal/actions/workflows/ci.yml/badge.svg)](https://github.com/MrProLopstar/prodcal/actions/workflows/ci.yml)
@@ -11,7 +11,7 @@
 Russian production calendar (производственный календарь РФ) for TypeScript and JavaScript: working days, public holidays, transferred days off, shortened pre-holiday days and working-hour norms.
 
 ```ts
-import { addWorkdays, dayKind, isWorkday, stats, workdaysBetween } from 'prodcal';
+import { addWorkdays, dayKind, isWorkday, stats, workdaysBetween } from 'prodcalendar';
 
 isWorkday('2026-01-09');                      // false, a transferred day off
 dayKind('2026-11-03');                        // 'short'
@@ -29,7 +29,7 @@ stats(2025).hours;                            // 1972, the official norm for a 4
 ## Install
 
 ```bash
-npm install prodcal
+npm install prodcalendar
 ```
 
 The same package is published to [JSR](https://jsr.io/@mrprolopstar/prodcal):
