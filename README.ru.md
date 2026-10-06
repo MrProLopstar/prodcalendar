@@ -32,6 +32,17 @@ stats(2025).hours;                            // 1972, официальная н
 npm install prodcalendar
 ```
 
+Без сборщика пакет можно подключить в браузере прямо с jsDelivr: он сам собирает минифицированный ES-модуль из npm-пакета:
+
+```html
+<script type="module">
+  import { isWorkday } from 'https://cdn.jsdelivr.net/npm/prodcalendar@0/+esm';
+  console.log(isWorkday('2026-12-31'));
+</script>
+```
+
+`@0` берёт последний релиз 0.x; в продакшене лучше указать точную версию, например `@0.1.2`.
+
 Тот же пакет опубликован в [JSR](https://jsr.io/@mrprolopstar/prodcalendar):
 
 ```bash

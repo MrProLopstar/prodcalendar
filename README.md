@@ -32,6 +32,17 @@ stats(2025).hours;                            // 1972, the official norm for a 4
 npm install prodcalendar
 ```
 
+No bundler? Load it in the browser straight from jsDelivr, which builds a minified ES module from the npm package:
+
+```html
+<script type="module">
+  import { isWorkday } from 'https://cdn.jsdelivr.net/npm/prodcalendar@0/+esm';
+  console.log(isWorkday('2026-12-31'));
+</script>
+```
+
+`@0` follows the latest 0.x release; pin an exact version such as `@0.1.2` in production.
+
 The same package is published to [JSR](https://jsr.io/@mrprolopstar/prodcalendar):
 
 ```bash
