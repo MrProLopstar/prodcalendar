@@ -100,7 +100,7 @@ stats(2026, 1);                       // January 2026
 
 ## Releasing
 
-Run **Actions → Release → Run workflow** and pick `patch`, `minor`, `major` or an exact version. The workflow bumps `package.json` and `jsr.json`, commits, tags, runs the tests and publishes to npm, JSR and GitHub Packages with a GitHub release. Use `current` to release the version already in `package.json`. Pushing a `v*` tag by hand works too.
+Run **Actions → Publish → Run workflow** and pick `patch`, `minor`, `major` or an exact version. The workflow bumps `package.json` and `jsr.json`, commits, tags, runs the tests and publishes to npm, JSR and GitHub Packages with a GitHub release. Use `current` to release the version already in `package.json`. Pushing a `v*` tag by hand works too.
 
 ## License
 

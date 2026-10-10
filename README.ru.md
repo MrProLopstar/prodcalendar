@@ -100,7 +100,7 @@ stats(2026, 1);                                   // январь 2026
 
 ## Релизы
 
-**Actions → Release → Run workflow**, затем выбрать `patch`, `minor`, `major` или точную версию. Workflow поднимет версию в `package.json` и `jsr.json`, сделает коммит и тег, прогонит тесты и опубликует пакет в npm, JSR и GitHub Packages вместе с GitHub Release. Вариант `current` выпускает версию, которая уже указана в `package.json`. Push тега `v*` вручную тоже работает.
+**Actions → Publish → Run workflow**, затем выбрать `patch`, `minor`, `major` или точную версию. Workflow поднимет версию в `package.json` и `jsr.json`, сделает коммит и тег, прогонит тесты и опубликует пакет в npm, JSR и GitHub Packages вместе с GitHub Release. Вариант `current` выпускает версию, которая уже указана в `package.json`. Push тега `v*` вручную тоже работает.
 
 ## Лицензия
 
